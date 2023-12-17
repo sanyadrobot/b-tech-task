@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54629e0f47cf4915b3cfa42284e125ce, type: 3}
+  m_Name: Order 3
+  m_EditorClassIdentifier: 
+  ArraySpendable:
+  - rid: 8217087216479633408
+  - rid: 8217087216479633409
+  ArrayReward:
+  - rid: 8217087216479633410
+  references:
+    version: 2
+    RefIds:
+    - rid: 8217087216479633408
+      type: {class: LocationMoveSpendable, ns: Location.Spendable, asm: LocationAssembly}
+      data:
+        currentLocation: New York
+        newLocation: Washington
+    - rid: 8217087216479633409
+      type: {class: HealthPercentageSpendable, ns: Health.Spendable, asm: HealthAssembly}
+      data:
+        percentage: 50
+    - rid: 8217087216479633410
+      type: {class: GoldFixedReward, ns: Gold.Reward, asm: GoldAssembly}
+      data:
+        amount: 10
